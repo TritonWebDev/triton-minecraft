@@ -53,3 +53,32 @@
 html {
   font-family: "Minecraftia", sans-serif;
 }
+
+@keyframes splashPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.minecraft-splash {
+  animation: splashPop 1s ease-out infinite;
+}
+
+.page-book {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+    background: url("/book.png") no-repeat center top;
+    word-break: keep-all;
+    text-align: left;
+    background-size: contain;
+    line-height: 22px;
+	padding: 50px 40px 100px 48px;
+}

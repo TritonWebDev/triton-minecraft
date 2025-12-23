@@ -1,0 +1,50 @@
+import Image from "next/image";
+import McButton from "@/components/mc-button";
+import dirtBackground from "@/public/dirt-background.png";
+import React from 'react';
+
+
+export default function EventsPage() {
+  return (
+    <main className="relative min-h-screen w-full overflow-hidden">
+      <Image
+        src={dirtBackground}
+        alt="Dirt Background"
+        fill
+        className="object-cover z-0"
+        style={{ imageRendering: 'pixelated' }}
+        priority
+      />
+
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12">
+        
+        <div className="w-full max-w-2xl space-y-">
+          
+          <h1 
+            className="text-white text-5xl md:text-5xl text-center mb-12 drop-shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
+            style={{
+              fontFamily: 'inherit',
+              textShadow: '4px 4px 0px rgba(63, 63, 63, 1)'
+            }}
+          >
+            Events
+          </h1>
+
+          <div className="flex flex-col items-center gap-2">
+            {/* TODO: ADD REAL EVENTS CALENDAR */}
+            <iframe src="https://calendar.google.com/calendar/embed?src=c_9t14nbib7ul8nubcb90gv4i5bo%40group.calendar.google.com&ctz=America%2FLos_Angeles" 
+            className="w-[800px] h-[600px]"></iframe>
+            <div className="w-md mt-20">
+              <a
+                href = "/"
+              >
+              <McButton title="Done" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
+

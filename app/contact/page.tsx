@@ -41,6 +41,7 @@ export default function ContactPage() {
             <div className="w-full max-w-md">
               <a 
                 href="mailto:tritonwebdev@ucsd.edu" // TODO: replace w/ real email
+                target="_blank"
               >
                 <McButton title="Email" />
               </a>
@@ -49,7 +50,8 @@ export default function ContactPage() {
             {/* Button 2 - Discord */}
             <div className="w-full max-w-md">
               <a 
-                href="https://discord.gg/tritonwebdev" // TODO: replace w/ real discord
+                href="https://discord.com/invite/AHuUG3ukuz" 
+                target="_blank"
               >
               <McButton title="Discord" />
               </a>
@@ -59,6 +61,7 @@ export default function ContactPage() {
             <div className="w-full max-w-md">
               <a 
                 href="https://www.instagram.com/tritonminecraftorg"
+                target="_blank"
               >
               <McButton title="Instagram" />
               </a>
