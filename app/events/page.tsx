@@ -18,10 +18,10 @@ export default function EventsPage() {
 
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12">
         
-        <div className="w-full max-w-2xl space-y-">
+        <div className="w-full max-w-2xl space-y- text-white text-center">
           
           <h1 
-            className="text-white text-5xl md:text-5xl text-center mb-12 drop-shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
+            className="text-5xl md:text-5xl mb-12 drop-shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
             style={{
               fontFamily: 'inherit',
               textShadow: '4px 4px 0px rgba(63, 63, 63, 1)'
@@ -29,6 +29,8 @@ export default function EventsPage() {
           >
             Events
           </h1>
+
+          Also check out our <a className="text-blue-500" href="https://www.instagram.com/tritonminecraftorg">Instagram</a> page to stay updated!
 
           <div className="flex flex-col items-center gap-2">
             {/* TODO: ADD REAL EVENTS CALENDAR */}

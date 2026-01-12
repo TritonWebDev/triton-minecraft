@@ -40,8 +40,8 @@ export default async function TeamPage() {
                     <Image 
                       src={member.picture} 
                       alt={member.name || ''} 
-                      width={150} 
-                      height={150}
+                      width={200} 
+                      height={200}
                       className="mb-2"
                     />
                   )}
