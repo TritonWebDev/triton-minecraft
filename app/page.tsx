@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar";
 import background from "@/public/minecraft-titlescreen.jpg";
 import SplashText from "@/components/splash-text";
 import logo from "@/public/TritonMinecraftLogo.png";
+import { Instagram } from "lucide-react";
 
 export default function Home() {
   return (
@@ -38,7 +39,9 @@ export default function Home() {
       />
 
       {/* Splash Text*/}
-      <SplashText className="absolute bottom-1/2 left-3/5 transform -translate-x-1/6 translate-y-65 rotate-[-20deg] relative z-50 text-2xl" text="Triton Minecraft" />
+      <div className="absolute bottom-[70%] left-[60%] -translate-x-1/6 translate-y-16 z-50 rotate-[-20deg]">
+        <SplashText className="text-2xl" text="Join our server!" />
+      </div>
 
       <div className="absolute z-48 bottom-1/2 left-1/2 transform -translate-x-1/2 translate-y-8/9 w-full max-w-xl px-4">
         <Navbar />
@@ -47,6 +50,32 @@ export default function Home() {
       <p className="absolute bottom-0 left-0 text-white">
         &copy; {new Date().getFullYear()} Triton Minecraft
       </p>
+
+      {/* Social Icons */}
+      <div className="absolute bottom-4 right-4 flex gap-4 z-50">
+        <a 
+          href="https://www.instagram.com/tritonminecraftorg" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-white hover:text-gray-300 transition-colors drop-shadow-lg"
+          aria-label="Instagram"
+        >
+          <Instagram size={32} />
+        </a>
+        <a 
+          href="https://discord.com/invite/AHuUG3ukuz" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Discord"
+        >
+          <Image 
+            src="/discord.svg" 
+            alt="Discord" 
+            width={32} 
+            height={32} 
+          />
+        </a>
+      </div>
     </main>
   );
 }
