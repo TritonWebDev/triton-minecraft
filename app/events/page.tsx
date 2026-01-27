@@ -21,7 +21,7 @@ export default function EventsPage() {
         <div className="w-full max-w-2xl space-y- text-white text-center">
           
           <h1 
-            className="text-5xl md:text-5xl mb-12 drop-shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
+            className="text-5xl md:text-5xl mb-2 drop-shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
             style={{
               fontFamily: 'inherit',
               textShadow: '4px 4px 0px rgba(63, 63, 63, 1)'
@@ -33,9 +33,29 @@ export default function EventsPage() {
           Also check out our <a className="text-blue-500" href="https://www.instagram.com/tritonminecraftorg">Instagram</a> page to stay updated!
 
           <div className="flex flex-col items-center gap-2">
-            {/* TODO: ADD REAL EVENTS CALENDAR */}
             <iframe src="https://calendar.google.com/calendar/embed?src=c_9t14nbib7ul8nubcb90gv4i5bo%40group.calendar.google.com&ctz=America%2FLos_Angeles" 
-            className="w-[800px] h-[600px]"></iframe>
+            className="w-[700px] h-[500px]"></iframe>
+            
+            <div className="w-full max-w-md mt-4">
+              <a 
+                href="https://calendar.google.com/calendar/render?cid=c_9t14nbib7ul8nubcb90gv4i5bo%40group.calendar.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <McButton title="Add to Google Calendar" />
+              </a>
+            </div>
+
+            <div className="w-full max-w-md mt-2">
+              <a 
+                href="https://calendar.google.com/calendar/ical/c_9t14nbib7ul8nubcb90gv4i5bo%40group.calendar.google.com/public/basic.ics"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <McButton title="Subscribe to Calendar (iCal)" />
+              </a>
+            </div>
+
             <div className="w-md mt-20">
               <a
                 href = "/"
