@@ -17,8 +17,8 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="mx-auto w-full h-screen flex flex-col justify-center items-center gap-2">
-            <div className="w-full max-w-xl relative">
+        <nav className=" w-full flex flex-col justify-center items-center gap-2">
+            <div className="w-full relative">
                 <button className="mc-button w-full" onClick={copyToClipboard}>
                     <p className="title">Join the Server!</p>
                 </button>
@@ -28,14 +28,14 @@ export default function Navbar() {
                     </div>
                 )}
             </div>
-            <a href="/about" className="w-full max-w-xl">
+            <a href="/about" className="w-full">
                 <McButton title="About"/>
             </a>
-            <a href="/events" className="w-full max-w-xl">
+            <a href="/events" className="w-full">
                 <McButton title="Events"/>
             </a>
             
-            <div className="flex flex-row gap-2 mt-8 max-w-xl w-full">
+            <div className="flex flex-row gap-2 mt-8 w-full">
                 <a href="/contact" className="flex-1">
                     <McButton title="Contact"/>
                 </a>

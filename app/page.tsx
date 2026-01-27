@@ -7,7 +7,7 @@ import logo from "@/public/TritonMinecraftLogo.png";
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative h-screen overflow-hidden">
       
       {/* Video background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
@@ -40,7 +40,7 @@ export default function Home() {
       {/* Splash Text*/}
       <SplashText className="absolute bottom-1/2 left-3/5 transform -translate-x-1/6 translate-y-65 rotate-[-20deg] relative z-50 text-2xl" text="Triton Minecraft" />
 
-      <div className="relative z-48 absolute bottom-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/8">
+      <div className="absolute z-48 bottom-1/2 left-1/2 transform -translate-x-1/2 translate-y-8/9 w-full max-w-xl px-4">
         <Navbar />
       </div>
 
