@@ -1,3 +1,11 @@
+# Triton Minecraft
+
+This is the website for the Triton Minecraft Club
+
+# Deployment
+The vercel page shown on github is the "preview" page for the website. Once you are sure it is stable create a tag/release (create a new tag upon release) and it will automatically deploy to https://tritonmc.com
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
