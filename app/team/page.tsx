@@ -43,6 +43,7 @@ export default async function TeamPage() {
                       width={200} 
                       height={200}
                       className="mb-2"
+                      unoptimized
                     />
                   )}
                   <div className="font-bold">{member.name || '-'}</div>
