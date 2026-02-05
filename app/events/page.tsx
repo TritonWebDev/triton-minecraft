@@ -21,10 +21,9 @@ export default function EventsPage() {
         <div className="w-full max-w-2xl space-y- text-white text-center">
           
           <h1 
-            className="text-5xl md:text-5xl mb-2 drop-shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"
+            className="text-5xl md:text-5xl mb-2"
             style={{
               fontFamily: 'inherit',
-              textShadow: '4px 4px 0px rgba(63, 63, 63, 1)'
             }}
           >
             Events
