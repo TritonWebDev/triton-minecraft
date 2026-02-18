@@ -29,10 +29,11 @@ export default function EventsPage() {
             Events
           </h1>
 
-          Also check out our <a className="text-blue-500" href="https://www.instagram.com/tritonminecraftorg">Instagram</a> page to stay updated!
-
+          Check out our <a className="text-blue-500" href="https://www.instagram.com/tritonminecraftorg">Instagram</a> page to stay updated!
+          <br />
+          Google Calendar coming soon!
           <div className="flex flex-col items-center gap-2">
-            <iframe src="https://calendar.google.com/calendar/embed?src=c_9t14nbib7ul8nubcb90gv4i5bo%40group.calendar.google.com&ctz=America%2FLos_Angeles" 
+            {/* <iframe src="https://calendar.google.com/calendar/embed?src=c_9t14nbib7ul8nubcb90gv4i5bo%40group.calendar.google.com&ctz=America%2FLos_Angeles" 
             className="w-[700px] h-[500px]"></iframe>
             
             <div className="w-full max-w-md mt-4">
@@ -53,7 +54,7 @@ export default function EventsPage() {
               >
                 <McButton title="Subscribe to Calendar (iCal)" />
               </a>
-            </div>
+            </div> */}
 
             <div className="w-md mt-20">
               <a
